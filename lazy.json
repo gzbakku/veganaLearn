@@ -1,0 +1,32 @@
+{
+  "pages": [],
+  "conts": {
+    "docsPage": [
+      "addCont",
+      "binderCont",
+      "commonCont",
+      "dataCont",
+      "getCont",
+      "loaderCont",
+      "makeCont",
+      "metaCont",
+      "paramsCont",
+      "requestCont",
+      "routerCont",
+      "sessionCont",
+      "setCont",
+      "sketchCont",
+      "staticCont",
+      "timeCont",
+      "uiCont",
+      "validateCont",
+      "viewCont",
+      "wetCont",
+      "creatorCont"
+    ]
+  },
+  "panels": {},
+  "sass": [
+    "samplePack"
+  ]
+}

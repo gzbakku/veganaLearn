@@ -1,0 +1,26 @@
+/*???????????????????
+
+"@" - for sub files in a sass tree structure, ignored in main sass compiler
+example - "@sub_component.scss"
+this file is compiled only when its parent is compiled and ignored if its parent-less
+
+"!" - for files to ignore in main sass compiler
+example - "!ignored_sass_file.scss"
+this file is ignored
+
+???????????????????*/
+
+.page-docs-cont-make-panel-list-list{
+  padding: 10px;
+  padding-left: 20px;
+}
+
+  .page-docs-cont-make-panel-list-list-item{
+    color:green;
+    padding: 10px;
+  }
+
+  .page-docs-cont-make-panel-list-list-item_one{
+    color:red;
+    padding: 10px;
+  }

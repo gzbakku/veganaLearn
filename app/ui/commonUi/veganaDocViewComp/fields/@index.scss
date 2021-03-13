@@ -1,0 +1,93 @@
+@import './codemirror.scss';
+@import './cobalt.scss';
+
+.ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field{
+  // padding: 10px;
+  // border: 5px solid green;
+  height: 100%;
+  overflow: hidden;
+  font-family: $font-text;
+}
+
+  .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-heading{
+    padding: 10px;
+    font-size: 16px;
+    font-family: $font-heading;
+    background-color: $color-pink;
+    margin: 10px;
+    display: inline-block;
+    color:white;
+    border-radius: 10px;
+  }
+
+  .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-paragraph{
+    padding: 10px;
+    font-family: $font-simple;
+    // border: 5px solid red;
+    // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    // margin: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    word-spacing: 5px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+
+  .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-image{
+    padding: 10px;
+    text-align: center;
+  }
+
+  .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-code{
+    // border: 5px solid red;
+  }
+
+    .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-code-editor{
+      border-radius: 10px;
+      font-size: 16px;
+      overflow: hidden;
+      width: 98%;
+    }
+
+    .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-code-runner{
+      background-color: $color-purple;
+      display: inline-block;
+      padding: 10px;
+      color:white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      width: 100px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-code-executer_cont{
+      // border: 5px solid green;
+      padding: 10px;
+    }
+
+      .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-code-executer_cont-executer{
+        // padding: 10px;
+        border: 5px solid $color-green;
+        border-radius: 10px;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        min-height: 100px;
+      }
+
+      .ui-cmmon-comp-veganaDocViewComp-main-rows-row-containers-container-field-code-executer_cont-executer-output{
+        border-radius: 10px;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        // padding: 10px;
+        min-height: 100px;
+        overflow: hidden;
+      }
+
+  .CodeMirror {
+    z-index: 0;
+    height: 100%;
+  }

@@ -1,0 +1,63 @@
+/*???????????????????
+
+"@" - for sub files in a sass tree structure, ignored in main sass compiler
+example - "@sub_component.scss"
+this file is compiled only when its parent is compiled and ignored if its parent-less
+
+"!" - for files to ignore in main sass compiler
+example - "!ignored_sass_file.scss"
+this file is ignored
+
+???????????????????*/
+
+.page-docs-router-conts-mobile{
+
+}
+
+.page-docs-router-conts{
+  // border: 5px solid red;
+  position: fixed;
+  width: 80vw;
+  height: 90vh;
+  top:10vh;
+  left:20vw;
+  padding-left: 20px;
+  overflow: auto;
+  padding-bottom: 50vh;
+}
+
+@keyframes page-docs-router-conts-full-animation {
+  from {
+    width: 80vw;
+    left:20vw;
+  }
+  to {
+    width: 100vw;
+    left:0px;
+  }
+}
+
+@keyframes page-docs-router-conts-half-animation {
+  from {
+    width: 100vw;
+    left:0px;
+  }
+  to {
+    width: 70vw;
+    left:30vw;
+  }
+}
+
+.page-docs-router-conts-half{
+  width: 80vw;
+  left:20vw;
+  animation-name: page-docs-router-conts-half-animation;
+  animation-duration: 500ms;
+}
+
+.page-docs-router-conts-full{
+  width: 100vw;
+  left:0px;
+  animation-name: page-docs-router-conts-full-animation;
+  animation-duration: 500ms;
+}

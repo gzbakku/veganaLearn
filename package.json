@@ -1,0 +1,16 @@
+{
+  "name": "veganaLearn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codemirror": "^5.59.4",
+    "vegana-engine": "^1.5.7"
+  }
+}

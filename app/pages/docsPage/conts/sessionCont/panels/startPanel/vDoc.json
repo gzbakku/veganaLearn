@@ -1,0 +1,44 @@
+{
+  "template": [
+    "2iyza5rskm6zdtqk"
+  ],
+  "rows": {
+    "2iyza5rskm6zdtqk": {
+      "id": "2iyza5rskm6zdtqk",
+      "template": [
+        "2iyza5rskm6zduuk",
+        "2iyza5rskm6zdwgc",
+        "2iyza5rskm6zdwsc"
+      ],
+      "containers": {
+        "2iyza5rskm6zduuk": {
+          "id": "2iyza5rskm6zduuk",
+          "field": {
+            "type": "heading",
+            "data": {
+              "value": "engine.session.start"
+            }
+          }
+        },
+        "2iyza5rskm6zdwgc": {
+          "id": "2iyza5rskm6zdwgc",
+          "field": {
+            "type": "paragraph",
+            "data": {
+              "value": "this api start a native vegana session, its just a store of data to store session information."
+            }
+          }
+        },
+        "2iyza5rskm6zdwsc": {
+          "id": "2iyza5rskm6zdwsc",
+          "field": {
+            "type": "code",
+            "data": {
+              "value": "\n//=================================\n//\tsession start api params\n//=================================\n/*\n\t\n    engine.session.start(token_object,user_object,uniqe_user_id_string,remember_session_boolean);\n\t\n*/\n\n\n"
+            }
+          }
+        }
+      }
+    }
+  }
+}

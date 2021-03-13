@@ -1,0 +1,171 @@
+/*???????????????????
+
+"@" - for sub files in a sass tree structure, ignored in main sass compiler
+example - "@sub_component.scss"
+this file is compiled only when its parent is compiled and ignored if its parent-less
+
+"!" - for files to ignore in main sass compiler
+example - "!ignored_sass_file.scss"
+this file is ignored
+
+???????????????????*/
+
+.ui-common-comp-sidepanelComp-main{
+  // border: 5px solid red;
+  position: fixed;
+  left:0px;
+  top:10vh;
+  height: 90vh;
+  width: 20vw;
+  overflow: auto;
+  border-right: 1px solid $color-grey;
+  background-color: #ededed;
+  padding-bottom: 20vh;
+}
+
+@keyframes ui-common-comp-sidepanelComp-main_open-animation {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 20vw;
+  }
+}
+
+@keyframes ui-common-comp-sidepanelComp-main_close-animation {
+  from {
+    width: 20vw;
+  }
+  to {
+    width: 0px;
+  }
+}
+
+.ui-common-comp-sidepanelComp-main_open{
+  width: 20vw;
+  animation-name: ui-common-comp-sidepanelComp-main_open-animation;
+  animation-duration: 500ms;
+}
+
+.ui-common-comp-sidepanelComp-main_close{
+  width: 0px;
+  animation-name: ui-common-comp-sidepanelComp-main_close-animation;
+  animation-duration: 500ms;
+}
+
+.ui-common-comp-sidepanelComp-sections{
+  // border: 5px solid blue;
+  padding-top: 10px;
+  // padding-left: 30px;
+}
+
+  .ui-common-comp-sidepanelComp-sections-section{
+    // border: 5px solid green;
+    overflow: auto;
+    font-family: $font-text;
+    text-transform: capitalize;
+    user-select: none;
+  }
+
+    .ui-common-comp-sidepanelComp-sections-section-href{
+      text-decoration: none;
+      // border: 5px solid purple;
+      display: block;
+    }
+
+    .ui-common-comp-sidepanelComp-sections-section-title{
+      grid-template-columns: 70% 30%;
+      display: grid;
+      margin-top: 20px;
+      // border: 5px solid red;
+    }
+
+      .ui-common-comp-sidepanelComp-sections-section-title-text{
+        color:$color-purple;
+        font-size: 16px;
+        cursor: pointer;
+        // border: 5px solid green;
+        padding-left: 10px;
+      }
+
+      .ui-common-comp-sidepanelComp-sections-section-title-icon{
+        // border: 5px solid purple;
+        // padding-top: 5px;
+      }
+
+        .ui-common-comp-sidepanelComp-sections-section-title-icon-img{
+          height: 15px;
+          width: auto;
+        }
+
+        @keyframes ui-common-comp-sidepanelComp-sections-section-title-icon-img-right-animation {
+          from {
+            transform: rotate(90deg);
+          }
+          to {
+            transform: rotate(0deg);
+          }
+        }
+
+        .ui-common-comp-sidepanelComp-sections-section-title-icon-img-right{
+          transform: rotate(0deg);
+          animation-name: ui-common-comp-sidepanelComp-sections-section-title-icon-img-right-animation;
+          animation-duration: 500ms;
+        }
+
+        @keyframes ui-common-comp-sidepanelComp-sections-section-title-icon-img-down-animation {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(90deg);
+          }
+        }
+
+        .ui-common-comp-sidepanelComp-sections-section-title-icon-img-down{
+          transform: rotate(90deg);
+          animation-name: ui-common-comp-sidepanelComp-sections-section-title-icon-img-down-animation;
+          animation-duration: 500ms;
+        }
+
+    .ui-common-comp-sidepanelComp-sections-section-title:hover{
+      color:$color-green;
+    }
+
+    .ui-common-comp-sidepanelComp-sections-section-links{
+      // border: 5px solid pink;
+      // width: 90%;
+      // float: right;
+      padding-top: 10px;
+    }
+
+      .ui-common-comp-sidepanelComp-sections-section-links-subSection{
+        padding-left: 5px;
+      }
+
+      .ui-common-comp-sidepanelComp-sections-section-links-link{
+        // border: 5px solid yellow;
+        display: block;
+        text-decoration: none;
+        color:$color-purple;
+        padding: 10px;
+        padding-left: 15px;
+        cursor: pointer;
+      }
+
+      .ui-common-comp-sidepanelComp-sections-section-links-link:hover{
+        color:$color-pink;
+      }
+
+        .ui-common-comp-sidepanelComp-sections-section-links-link-text{
+          font-size: 14px;
+          font-family: $font-text;
+          // border: 5px solid red;
+        }
+
+        .ui-common-comp-sidepanelComp-sections-section-links-link-text-withSubsections{
+          // border: 5px solid red;
+          padding-top: 5px;
+          font-size: 16px;
+          // padding-bottom: 5px;
+        }
